@@ -13,12 +13,18 @@ public class User {
 
     private String name;
 
+    /* CascadeType.ALL >> when a user is deleted, the 
+    account correspondent will be deleted too */
+        /* will cause a criation of a stranger key, 
+    binding the account class with the account user */
     @OneToOne(cascade = CascadeType.ALL)
     private Account account;
 
     @OneToOne(cascade = CascadeType.ALL)
     private Card card;
 
+    /* FetchType.EAGER >> eager loading, 
+    the data will be  (buscado) as soon as the entity is retrieved */
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Feature> features;
 

@@ -11,16 +11,18 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    /* constraint */
     @Column(unique = true)
     private String number;
 
     private String agency;
 
+    /* 13 number as max. Scale is the number of decimal */
     @Column(precision = 13, scale = 2)
     private BigDecimal balance;
 
     @Column(name = "additional_limit", precision = 13, scale = 2)
-    private BigDecimal limit;
+    private BigDecimal limit;// new name to avoid reserved words
 
     public Long getId() {
         return id;
