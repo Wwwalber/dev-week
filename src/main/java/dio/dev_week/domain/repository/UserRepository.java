@@ -10,5 +10,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
                         /* User é a classe que vamos usar, o id
                          * foi classificado como Long
                          */
-
+    // ver se o account_number já exist
+    boolean existsByAccountNumber(String accountNumber);
 }
