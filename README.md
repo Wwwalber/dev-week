@@ -11,3 +11,36 @@ Java RESTful API criada para a Santander Dev Week.
 
 ## IMPORTANTE
 Este projeto foi construído com um viés de prática de estudo relaciona ao Bootcamp Santander Dev week Java Backend 2024 oferecido pela Digital Inovation One (DIO).
+
+## Diagrama de Classes
+```mermaid
+classDiagram
+    class User {
+        +String name
+    }
+    class Account {
+        +String accountNumber
+        +String accountAgency
+        +String accountBalance
+        +String accountLimit
+    }
+    class Features {
+        +String pixIcon
+        +String pixDescription
+        +String payIcon
+        +String payDescription
+    }
+    class Card {
+        +String cardNumber
+        +float cardLimit
+    }
+    class News {
+        +String newsIcon
+        +String newsDescription
+    }
+
+    User "1" *-- "1" Account
+    User "1" *-- "N" Features
+    User "1" *-- "1" Card
+    User "1" *-- "N" News
+```
