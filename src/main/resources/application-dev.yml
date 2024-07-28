@@ -1,7 +1,7 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:sdw2023
-    username: sdw2023
+    url: jdbc:h2:mem:bcamp2024
+    username: bcamp2024
     password:
   jpa:
     show-sql: true
@@ -18,3 +18,5 @@ spring:
       settings:
         trace: false
         web-allow-others: false
+
+# *.yml is automatically detected, but with -dev.yml not
