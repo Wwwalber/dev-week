@@ -44,3 +44,4 @@ classDiagram
     User "1" *-- "1" Card
     User "1" *-- "N" News
 ```
+## Executando a API em banco de dados local Postgres
