@@ -46,3 +46,5 @@ classDiagram
 ```
 ## Executando a API em banco de dados local Postgres
 ![image](https://github.com/user-attachments/assets/395d0aa3-8c07-4c41-b78a-f8cf35b1aed1)
+
+Fiz diversas tentativas e pesquisas mas não consegui fazer a execução na nuvem. Consequentemente apenas consegui fazer o projeto funcionar localmente, sem mais acréscimos.
